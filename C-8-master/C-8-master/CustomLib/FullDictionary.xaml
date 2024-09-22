@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Dictionaries/lang.ru-ru.xaml"/>
+        <ResourceDictionary Source="Dictionaries/lang.en-en.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

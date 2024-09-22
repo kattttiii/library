@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:V="clr-namespace:System;assembly=System.Runtime">
+    <V:String x:Key="Text">Напишите что ни будь! например как прошел ваш день</V:String>
+    <V:String x:Key="SaveBtn">Сохранить</V:String>
+    <V:String x:Key="LoadBtn">Загрузить</V:String>
+</ResourceDictionary>

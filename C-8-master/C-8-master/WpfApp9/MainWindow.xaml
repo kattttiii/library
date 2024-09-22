@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp9" xmlns:Sys="clr-namespace:System;assembly=System.Runtime"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ComboBox x:Name="LangCombo" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                <Sys:String>Русский</Sys:String>
+                <Sys:String>English</Sys:String>
+            </ComboBox>
+        </Grid>
+        <TextBlock><Run Text="Напишите что ни будь! например как прошел ваш день"/><Run Language="ru-ru" Text="."/></TextBlock>
+        <TextBox x:Name="Tbx" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="4"/>
+        <Button Grid.Row="5" Content="{DynamicResource SaveBtn}" Click="Save_Click"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="{DynamicResource LoadBtn}" Click="Load_Click"/>
+    </Grid>
+</Window>
